@@ -3,11 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './components/SumarNumeros/SumarNumeros'
+import SumarNumeros from './components/SumarNumeros/SumarNumeros';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <div className="App">
+    <SumarNumeros num1="5" num2="7"/>
+    <SumarNumeros num1="456" num2="46"/>
+    <SumarNumeros num1="4575" num2="4678"/>
+  </div>,
   document.getElementById('root')
 );
 
